@@ -1,0 +1,8 @@
+{
+  "an_unknown_error_has_occured": "une erreur est survenue, veuilllez rééesaayer puis contactez nous si le problème  persiste toujours",
+
+"firestore": {
+    "permission-denied": "Permissions manquantes ou insuffisantes"
+}
+
+}

@@ -78,32 +78,41 @@ export const FeaturedView = () => {
 
 
     return (
-        <div className="bg-gray-300  ">
+        <div className="bg-gray-300  " id="ABOUT ME">
 
-            <Container className="grid grid-cols-12 gap-24 py-24">
-                <div className="grid grid-cols-2 col-span-7 gap-7">{featuredList}</div>
+            <Container className="grid grid-cols-12 gap-24 py-24  ">
+                <div className="grid  col-span-7 gap-5 relative">
+                
+                <Image fill src="assets/images/teamwork.jpg" alt="illustration gateau" />
+                </div>
 
-                <div className="flex flex-col justify-between  col-span-5 gap-10">
+
+                <div className="flex flex-col justify-between  col-span-5 gap-10 py-5">
                     <div>
-                        <Typography variant="h3" component="h3" className="mb-5" >
-                       L'endroit le plus cool pour devenir developpeur
+                        <Typography variant="h5" component="h3" theme="primary" className="mb-5" >
+                         ABOUT ME
                         </Typography>
 
-                        <Typography variant="body-lg" component="p" theme="gray" className="mb-8" >
-                       Du partage,des connexions et des formations notre 
-                       app gère tout ca pour toi. ejoins l commnauté et grimpe en grade.Let's go
+                        <Typography variant="h5" component="p" theme="black" className="mb-8" >
+                        A dedicated Full-Stack Developper based in Africa, Benin 🎈 
                         </Typography>
-                        <Button variant="secondary" baseUrl="/" icon={{icon:RiArrowRightLine}} iconPosition="right">
-                           Commencer
-                        </Button>
+
+                        <Typography variant="body-base" component="div" theme="gray-600" className="mb-4" >
+                         As a junior Full-Stack Developper, I possess on impressive arsenal of skills in
+                         Javascript, Php, typescript  and Framework Next-js, React , Vue JS , Tailwind CSS, 
+                         Laravel. I excel in designing and maintaining responsives websites that offer a smooth
+                         user experience. My expertise les in crafting dynamic, engaging interfaces trougth 
+                         writing and optimized code and utilizing cuming-edge developpement tools and techniques.
+                         I am also a team player thelves collaborating with cross-functional teams to produce
+                         outstanding web applications.
+
+                        </Typography>
                     </div>
 
                     <div >
-                    <Typography variant="caption3" component="div" theme="gray" className="mb-4" >
-                       Nos réseaux sociaux
-                        </Typography>
+                   
 
-                        <SocialNetworksButtons/>
+                       
                     </div>
                 </div>
             </Container>

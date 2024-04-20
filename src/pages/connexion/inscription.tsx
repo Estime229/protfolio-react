@@ -1,3 +1,4 @@
+import { GUEST } from '@/lib/session-status';
 import { Container } from '@/ui/components/container/container';
 import { Layout } from '@/ui/components/layout/layout';
 
@@ -13,7 +14,7 @@ export default function Register() {
     <>
       <Seo title="inscription sur coders monkeys" description="Page d'inscription" />
 
-      <Layout >
+      <Layout sessionStatus={GUEST}>
       <RegisterContainer/>
       </Layout>
     </>

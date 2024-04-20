@@ -1,5 +1,5 @@
 import { AppLinks } from "@/types/app-links";
-import { RiLinkedinFill, RiSlackFill, RiYoutubeFill } from "react-icons/ri";
+import { RiGithubFill, RiLinkedinFill, RiSlackFill, RiYoutubeFill } from "react-icons/ri";
 
 export const footerApplicationLinks: AppLinks [] = [
     {
@@ -84,10 +84,10 @@ const footerInformationLinks: AppLinks [] = [
 
 export const footerSocialNetworksLinks: AppLinks [] = [
     {
-        label: "Youtube",
+        label: "Github",
         baseUrl: "https://youtube.com@remotemonkey",
         type: "external", 
-        icon: RiYoutubeFill,
+        icon: RiGithubFill,
     },
 
     {

@@ -1,7 +1,7 @@
 
 export interface FormType{
     control?: any;
-    onSubmit: any;
+    onSubmit?: any;
     errors: any;
     isLoading : boolean;
     register: any;
@@ -26,4 +26,19 @@ export interface LoginFormFielsType {
 export interface ForgetPasswordFormFielsType {
     email: string;
  
+}
+
+export interface OnboardingProfileFormFielsType {
+    displayName: string;
+    expertise: string;
+    biography: string;
+}
+
+
+export interface UserProfileFormFielsType {
+    displayName: string;
+    expertise: string;
+    biography: string;
+    github: string;
+    linkediin: string
 }

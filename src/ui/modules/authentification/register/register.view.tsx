@@ -6,7 +6,7 @@ import Link from "next/link";
 import { RegisterForm } from "./register.form";
 import { FormType } from "@/types/forms";
 
-interface Props{
+interface Props {
     form: FormType;
 }
 
@@ -14,23 +14,23 @@ interface Props{
 
 
 
-export const RegisterView = ({form}:Props) => {
+export const RegisterView = ({ form }: Props) => {
     return (
-    <Container className="grid grid-cols-2 gap-20 mb-32">
-        <div className=" flex items-center">
-            <div className="relative w-full h-[531px]">
-                <Image
-                    fill
-                    src="/assets/svg/inscription.svg"
-                    alt="Description de l'illustration"
-                    className="object-scale-down"
-                />
+        <Container className="grid grid-cols-2 gap-20 mb-32">
+            <div className=" flex items-center">
+                <div className="relative w-full h-[531px]">
+                    <Image
+                        fill
+                        src="/assets/svg/inscription.svg"
+                        alt="Description de l'illustration"
+                        className="object-scale-down"
+                    />
+                </div>
             </div>
-        </div>
 
-        <div className="flex items-center">
-            <Box padding_y="py-5">
-                <div className="flex items-center justify-between">
+            <div className="flex items-center">
+                <Box padding_y="py-5">
+                    <div className="flex items-center justify-between">
 
                         <Typography variant="h5" component="h1">
                             Inscription
@@ -48,10 +48,30 @@ export const RegisterView = ({form}:Props) => {
 
 
 
-                </div>
-                <RegisterForm form={form}/>
-            </Box>
-        </div>
-    </Container>
-)
+                    </div>
+                    <RegisterForm form={form} />
+                    <Typography variant="caption4" theme="gray" className="max-w-md mx-auto space-y-1 text-center">
+
+                        <div>
+
+                            En t'inscrivant, tu acceptes les
+                        </div>
+
+                        <div>
+                            <Link href="/#" className="text-gray">
+                                Conditions d'utilisations
+                            </Link>
+
+                            {" "} et la {" "}
+                            <Link href="/#" className="text-gray">
+                                Politique de confidentialité
+                            </Link>
+
+                        </div>
+                    </Typography>
+
+                </Box>
+            </div>
+        </Container>
+    )
 };

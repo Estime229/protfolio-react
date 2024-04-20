@@ -1,6 +1,7 @@
 import { Container } from "@/ui/components/container/container";
 import { Typography } from "@/ui/design-system/typography/typography";
 import Image from "next/image";
+
 import { RiPlayCircleLine } from "react-icons/ri";
 
 
@@ -30,7 +31,7 @@ export const CurrentCourseCtaView = () => {
                                 theme="white"
                                 className="upercase"
                                 weight="meduim">
-                                Lire la formation
+                                Lire la formation et le prendre si possible
                             </Typography>
                         </div>
                         <Image fill src="assets/images/Hero.png" alt="" className="object-cover object-center rounded" />

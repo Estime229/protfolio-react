@@ -1,3 +1,4 @@
+import { GUEST } from '@/lib/session-status';
 import { Container } from '@/ui/components/container/container';
 import { Layout } from '@/ui/components/layout/layout';
 
@@ -13,7 +14,7 @@ export default function Connexion() {
     <>
       <Seo title="Connexion sur coders monkeys" description="Page de connexion" />
 
-      <Layout >
+      <Layout  sessionStatus={GUEST}>
       <LoginContainer/>
       </Layout>
     </>

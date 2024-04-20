@@ -9,8 +9,8 @@ export const LandingPageView = () => {
     return <>
         <HeroTopView />
         <FeaturedView />
-        <CodersMonkeysSlackView />
-        <CurrentCourseCtaView />
+        {/* <CodersMonkeysSlackView /> 
+        <CurrentCourseCtaView />  */}
         
         <HighlightListView />
         <CallToActionView />
